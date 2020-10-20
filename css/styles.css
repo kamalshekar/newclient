@@ -7,8 +7,8 @@
 	--color-secondary-grey:#c5c5c5; /*midgrey*/
 	--color-tertiary-grey:#f5f5f5; /*lightgrey*/
 
-	--ff-mont: 'Montserrat', sans-serif;
-	--ff-nuni: 'Nunito Sans', sans-serif;
+	--ff-mont: 'Poppins', sans-serif;
+	--ff-nuni: 'Poppins', sans-serif;
 	--ff-popp: 'Poppins', sans-serif;
 
 	--shadow-org:.2rem .2rem .6rem rgba(0,0,0,.20);
@@ -62,8 +62,9 @@ button:active{
 	color: var(--color-primary-blue) !important;	
 }
 .header-logo{
-	padding-top: 1rem;
-    margin-left: 1rem;
+	/* padding-top: 1rem; */
+	margin-left: 1rem;
+	transition: all 0.8s;
 }
 
 /******** SOCIAL SECTION RIGHT STYLES ********/
@@ -72,8 +73,8 @@ button:active{
 	display: flex;
 	justify-content: flex-end;
 	color: white;
-
-    margin-bottom: 13px;
+font-size: 32px;
+    margin-bottom: 6px;
 
 }
 .HoverClass1 li a:hover{
@@ -84,8 +85,8 @@ color:var(--color-primary-blue)!important;
 .socail_icon_nav
 {
 	font-weight: 400;
-    font-size: 32px;
-	padding-right: 2rem;
+    /* font-size: 32px; */
+	padding-right: 1.5rem;
 	cursor: pointer;
 	
 }
@@ -138,18 +139,26 @@ color:var(--color-primary-blue)!important;
     height: 84vh;
     background-image: url("../assets/homePage.png");
 }
+.nav_socail_Section .socail_icon_nav{
+	color: var(--color-primary-blue) !important;
+	transition: all .4s;
+}
 header{
 	top: 0;
 	display: flex;
 	justify-content: space-between;
+	/* transition: 0.2s ease; */
 	/* padding: .8rem; */
 	font-size: 1.2rem;
 	z-index: 10;
 	position: fixed;
 	width: 100%;
-	background-color: rgba(255,255,255,.5);
-	transition: all .5s;
+	background-color:white;
+	transition: all .5s ease;
 	align-items: center;
+}
+nav{
+	transition: all .5s ease;	
 }
 header>img{
 	cursor: pointer;
@@ -159,6 +168,7 @@ header>img{
 nav{
 	margin-top: 2rem;
 	display: none;
+	transition: 0.2s ease
 }
 nav ul{
 	list-style: none;
@@ -230,7 +240,7 @@ header #burger{
     flex-direction: column;
     transition: transform .2s;
     transform-origin: top;
-    height: 11rem;
+    height: auto;
     width: 11rem;
     text-align: center;
     /* justify-content: center; */
@@ -289,7 +299,7 @@ main>*:not(:first-child){
 .card-left p{
 	font-size: 18px;
     line-height: 37px;
-    font-family: Nunito sans-serif;
+    /* font-family: Nunito sans-serif; */
     text-align: left;
 }
 .card-right img{
@@ -517,6 +527,7 @@ margin-top: 5rem;
 }
 #team .startup-card .team-image>img:first-child{
 	width: 19rem;
+	height: 19rem;
 }
 #team .startup-card .team-image{
 	position: relative;

@@ -7,9 +7,10 @@ const socialArrow = document.querySelector('#social span'),
 	listItems = document.querySelectorAll('nav ul li'),
 	listItems1 = document.querySelector('nav ul'),
 	burgerLines = document.querySelectorAll('#burger div'),
-	gainLogo = document.querySelector('header>img'),
+	gainLogo = document.querySelector('header a img'),
 	fabicon = document.querySelector('.nav_socail_Section'),
-	
+	navimagefab=document.querySelectorAll('.nav_socail_Section > i '),
+	socialLinksnavbar = document.querySelector('.nav_socail_Section')
 	faqs = document.querySelectorAll('.faq-item p'),
 	faqImgs = document.querySelectorAll('.faq-item img');
 
@@ -52,17 +53,25 @@ window.addEventListener('scroll',()=>{
 	if(scrollVal>90){
 	
 		header.style.boxShadow = '0 .3rem .8rem rgba(0,0,0,0.25)';
-		header.style.backgroundColor = 'white';
-		// gainLogo.style.width = '4rem';
+		header.style.backgroundColor = '#ffffffb0';
+		gainLogo.style.width = '6rem';
 		fabicon.style.color="#0D64BB";
 		listItems1.classList.add('HoverClass1');
+		gainLogo.style.paddingTop = '0rem';
+		fabicon.style.fontSize="22px";
+		fabicon.style.paddingTop="1rem";
+		fabicon.style.paddingRight="1.5rem";
 	}
 	else{
-		header.style.backgroundColor = 'rgba(255,255,255,.5)';
+		header.style.backgroundColor = 'white';
 		header.style.boxShadow = 'none';
-		// gainLogo.style.width = '7rem';
+	 gainLogo.style.width = '9.5rem';
 		fabicon.style.color="white";
 		listItems1.classList.remove('HoverClass1');
+		fabicon.style.fontSize="32px";
+		fabicon.style.paddingRight="1.5rem";
+		fabicon.style.paddingTop="0.5rem";
+		// gainLogo.style.paddingTop = '1rem';
 	}
 })
 
@@ -73,8 +82,10 @@ socialArrow.addEventListener('click',()=>{
 	socialIcon.classList.toggle('rotateSocial');
 })
 
-
-window.onload = function () {
-
-	window.scrollTo(0,0);
-};
+function sa(){
+	
+// 	window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
+// 	alert()
+}
